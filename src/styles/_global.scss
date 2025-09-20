@@ -1,0 +1,23 @@
+@import './mixins';
+@import './variables';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     @include font-styling(400, $Black);
+     background-color: $Silver;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
