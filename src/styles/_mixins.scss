@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./typography";
+
+
+@mixin font-styling($fw, $c: $Black){
+    font-family: "kantumPro";
+    font-weight: $fw;
+    color: $c;
+}
+
+@mixin format-text($lh, $fs: 1rem, $fw) {
+    line-height: $lh;
+    font-size: $fs;
+    font-weight: $fw;
+}
