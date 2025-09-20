@@ -14,21 +14,21 @@ export default function Header(){
                         src ={logo}
                         className= 'nav-bar__heading'
                         />
-                    
+                    <section className='nav-bar__lists-container'>
+                        <ul className='nav-bar__lists'>
+                            <li className='nav-bar__summary'>
+                                Summary
+                            </li>
+                            <li className='nav-bar__exp'>
+                                Experience
+                            </li>
+                            <li className='nav-bar__contact'>
+                                Contact Me
+                            </li >
+                        </ul>
+                    </section>
                 </section>
-                <section className='nav-bar__lists-container'>
-                    <ul className='nav-bar__lists'>
-                        <li className='nav-bar__summary'>
-                            Summary
-                        </li>
-                        <li className='nav-bar__exp'>
-                            Experience
-                        </li>
-                        <li className='nav-bar__contact'>
-                            Contact Me
-                        </li >
-                    </ul>
-                </section>
+                
             </nav>
         </header>
     )

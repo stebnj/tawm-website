@@ -1,3 +1,37 @@
 @use '../../styles/global';
 @import '../../styles/variables';
 @import '../../styles/mixins';
+
+
+.nav-bar{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__heading-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__lists-container{
+        padding-right: 2rem;
+    }
+
+    &__heading{
+        height: 50px;
+        margin-right: 1rem;
+
+    }
+    &__lists{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding-right: 0;
+
+    }
+
+    &__summary, &__exp, &__contact{
+        padding-right: 1rem;
+    }
+}
