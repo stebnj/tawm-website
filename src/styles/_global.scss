@@ -9,11 +9,10 @@
 
 body{
      @include font-styling(400, $Black);
-    background: linear-gradient(to bottom, $Silver, #2a5298);
-    background-repeat: no-repeat;   // prevent tiling
-    background-attachment: fixed;   // keeps gradient steady while scrolling
-    background-size: cover;         // makes sure it stretches full height
-    min-height: 100vh;  
+    background-image: url(../assets/pictures/test.jpg);
+    background-size: 108%;
+    
+    background-repeat: no-repeat;
 }
 
 
