@@ -1,0 +1,19 @@
+@use '../../styles/global';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.hero{
+    color: $White;
+    margin: 3rem 4rem 0 4rem;
+
+
+    &__heading{
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph{
+        display:flex;
+        justify-content: center;
+    }
+}
