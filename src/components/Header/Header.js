@@ -23,7 +23,7 @@ export default function Header(){
                                 Experience
                             </li>
                             <li className='nav-bar__contact'>
-                                Contact Me s
+                                Contact Me
                             </li >
                         </ul>
                     </section>
