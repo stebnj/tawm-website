@@ -7,8 +7,13 @@
     color: $White;
     margin: 3rem 4rem 0 4rem;
     display: flex;
-    height: 100%;
+    height: 50rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
+    &__inner-container{
+        flex: 1 1 50%;
+    }
 
 
     &__heading{
@@ -26,12 +31,20 @@
     &__paragraph-text{
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
     }
-}
 
-.image{ 
-
-    &__src{
+    &__image-src{
         width: 15rem;
         height: auto;
     }
+
+    &__logos{
+        flex: 1 1 100%;
+    }
+
+    &__logos-college{
+        width: 17rem;
+        height: auto;
+        margin-bottom: 4rem;
+    }
 }
+

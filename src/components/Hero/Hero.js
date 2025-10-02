@@ -22,18 +22,16 @@ export default function Hero(){
                     </p>
                 </article>
             </div>
-            <section className='image'>
+            <section className='hero__image'>
                 <img
-                    className='image__src'
+                    className='hero__image-src'
                     src={wheel}
-                
-                
                 />
             </section>
 
-            <section className='logos'>
-                <img
-                className='logos__college'
+            <section className='hero__logos'>
+                <img 
+                className='hero__logos-college'
                 src={college}
                 />
             </section>
