@@ -14,7 +14,7 @@ export default function Hero(){
 
         const timer = setTimeout(() => {
             setShowLogos(true);
-        }, 2000)
+        }, 1800)
 
         return () => clearTimeout(timer)
     }, [])
