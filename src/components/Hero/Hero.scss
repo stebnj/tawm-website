@@ -48,3 +48,14 @@
     }
 }
 
+
+.hero__inner-container,
+.hero__logos{
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.fade-in{
+    opacity: 1;
+}
+
