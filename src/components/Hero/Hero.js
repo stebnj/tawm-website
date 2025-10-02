@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.scss'
-
+import wheel from '../../assets/pictures/wheel.svg'
+import college from '../../assets/pictures/college.svg'
 
 export default function Hero(){
     return(
@@ -13,7 +14,7 @@ export default function Hero(){
                 </article>
                 <article className='hero__paragraph'>
                     <p className='hero__paragraph-text'>
-    Detail oriented and creative Mechanical Designer with 6 years of experience in 3D modeling and mechanical design, primarily using SolidWorks and AutoCAD.
+        Detail oriented and creative Mechanical Designer with 6 years of experience in 3D modeling and mechanical design, primarily using SolidWorks and AutoCAD.
         Known for delivering high quality, manufacturable designs with a strong focus on accuracy and efficiency. 
         Born and raised in Southern California, I bring a strong work ethic and a collaborative mindset to every project. 
         I excel in creating detailed 3D models and assemblies that meet both functional and aesthetic requirements. 
@@ -21,6 +22,21 @@ export default function Hero(){
                     </p>
                 </article>
             </div>
+            <section className='image'>
+                <img
+                    className='image__src'
+                    src={wheel}
+                
+                
+                />
+            </section>
+
+            <section className='logos'>
+                <img
+                className='logos__college'
+                src={college}
+                />
+            </section>
         </section>
     )
 }

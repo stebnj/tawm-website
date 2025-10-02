@@ -6,14 +6,32 @@
 .hero{
     color: $White;
     margin: 3rem 4rem 0 4rem;
+    display: flex;
+    height: 100%;
+
 
 
     &__heading{
         margin-bottom: 1rem;
+        font-size: 0.8rem;
     }
 
     &__paragraph{
         display:flex;
         justify-content: center;
+        text-align: justify;
+        padding-right: 3rem;
+    }
+
+    &__paragraph-text{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+    }
+}
+
+.image{ 
+
+    &__src{
+        width: 15rem;
+        height: auto;
     }
 }
