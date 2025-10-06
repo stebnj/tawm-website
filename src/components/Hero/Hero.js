@@ -21,7 +21,7 @@ export default function Hero(){
 
     return(
 
-        <section className='hero'>
+        <main className='hero'>
             <div className={`hero__inner-container ${showSummary ? "fade-in" : ""}`}>
                 <article className='hero__heading'>
                     <h1 className='hero__heading-text'>
@@ -51,6 +51,6 @@ export default function Hero(){
                 src={college}
                 />
             </section>
-        </section>
+        </main>
     )
 }

@@ -10,7 +10,7 @@
 body{
      @include font-styling(400, $Black);
     background-image: url(../assets/pictures/test.jpg);
-    background-size: 108%;
+    background-size: cover;
     
     background-repeat: no-repeat;
 }

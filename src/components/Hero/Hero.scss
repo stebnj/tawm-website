@@ -7,9 +7,9 @@
     color: $White;
     margin: 3rem 4rem 0 4rem;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    height: 42.25rem;
+    height: 50rem;
 
     &__inner-container{
         flex: 1 1 50%;
@@ -25,15 +25,17 @@
         display:flex;
         justify-content: center;
         text-align: justify;
-        padding-right: 3rem;
+        padding-right: 10%;
+        
     }
 
     &__paragraph-text{
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6)
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        line-height: 2;
     }
 
     &__image-src{
-        width: 15rem;
+        width: 23rem;
         height: auto;
     }
 
@@ -42,7 +44,7 @@
     }
 
     &__logos-college{
-        width: 17rem;
+        width: 18rem;
         height: auto;
     }
 }
