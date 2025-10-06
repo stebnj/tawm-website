@@ -9,7 +9,10 @@ function App() {
   return (
     <BrowserRouter>
       <Header/>
-      <Hero />
+      <Routes>
+        <Route path='/' element={<Hero />}></Route>
+      </Routes>
+      
 
 
     </BrowserRouter>

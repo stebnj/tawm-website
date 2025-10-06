@@ -9,11 +9,14 @@ export default function Header(){
         <header className='header'>
             <nav className='nav-bar'>
                 <section className='nav-bar__heading-container'>
-                   
+                    <Link to="/">
                         <img
                         src ={logo}
                         className= 'nav-bar__heading'
                         />
+                    
+                    </Link>
+                       
                     <section className='nav-bar__lists-container'>
                         <ul className='nav-bar__lists'>
                             <li className='nav-bar__summary'>
