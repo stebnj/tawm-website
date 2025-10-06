@@ -19,9 +19,12 @@ export default function Header(){
                        
                     <section className='nav-bar__lists-container'>
                         <ul className='nav-bar__lists'>
-                            <li className='nav-bar__summary'>
-                                Summary
-                            </li>
+                            <Link to="/exp">  
+                                <li className='nav-bar__summary'>
+                                    Summary
+                                </li>
+                            </Link>
+                          
                             <li className='nav-bar__exp'>
                                 Experience
                             </li>
@@ -31,7 +34,6 @@ export default function Header(){
                         </ul>
                     </section>
                 </section>
-                
             </nav>
         </header>
     )
