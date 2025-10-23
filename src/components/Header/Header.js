@@ -24,7 +24,7 @@ export default function Header(){
                                     Summary
                                 </li>
                             </Link>
-                            <Link to="/exp">
+                            <Link to="/experience">
                                 <li className='nav-bar__exp'>
                                     Experience
                                 </li>
