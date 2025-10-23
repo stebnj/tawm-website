@@ -3,8 +3,6 @@ import './Hero.scss'
 import wheel from '../../assets/pictures/wheel.svg'
 import college from '../../assets/pictures/college.svg'
 import {useEffect, useState } from "react"
-import { useNavigate } from 'react-router-dom'
-import {motion} from 'framer-motion'
 
 
 export default function Hero(){
@@ -21,32 +19,11 @@ export default function Hero(){
 
         return () => clearTimeout(timer)
     }, [])
-
-
-    const navigate = useNavigate()
-
-    useEffect(() => {
-        const handleWheel = (e) => {
-            if(e.deltaY > 0) {
-                navigate('/experience')
-            }
-        };
-
-        window.addEventListener("wheel", handleWheel);
-        return () => window.removeEventListener('wheel', handleWheel)
-    }, [navigate]);
-
-  
+    
 
     return(
 
-        <motion.main className='hero'
-            initial={{ y: '100%' }}
-            animate={{ y: '0%' }}
-            exit={{ y: '-100%' }}
-            transition={{ duration: 0.8 }}
-
-            >
+        <main className='hero'>
             <div className={`hero__inner-container ${showSummary ? "fade-in" : ""}`}>
                 <article className='hero__heading'>
                     <h1 className='hero__heading-text'>
@@ -76,6 +53,6 @@ export default function Hero(){
                 src={college}
                 />
             </section>
-        </motion.main>
+        </main>
     )
 }

@@ -6,6 +6,11 @@
 .header{
      background: linear-gradient(to right, #1e3c72, #2a5298);
     color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-bar{
