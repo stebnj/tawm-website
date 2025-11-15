@@ -20,4 +20,14 @@
         height: 6.5rem;
     }
 
+    &-text{
+        color:$White;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        line-height: 2;
+        display:flex;
+        justify-content: center;
+        text-align: justify;
+        padding-right: 10%;
+    }
+
 }
