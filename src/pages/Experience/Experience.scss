@@ -3,6 +3,18 @@
 @import '../../styles/mixins';
 
 
+h1{
+    font-size: 3rem;
+}
+
+
+.exp{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
 .exp__title{
     padding: 5.5rem 0rem 4rem 3.5rem;
 
@@ -14,10 +26,13 @@
 
 .exp__egad{
     padding-left: 3.5rem;
+    display: flex;
+    align-items: center;
 
 
     &-img{
-        height: 6.5rem;
+        height: 6rem;
+        padding-right: 3rem;
     }
 
     &-text{
@@ -28,6 +43,30 @@
         justify-content: center;
         text-align: justify;
         padding-right: 10%;
+        font-size: 1.15rem;
     }
 
+}
+
+.exp__we{
+    padding-left: 3.5rem;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+
+    &-img{
+        height: 10.4rem;
+        padding-right: 2rem;
+    }
+
+    &-text{
+        color:$White;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        line-height: 2;
+        display:flex;
+        justify-content: center;
+        text-align: justify;
+        padding-right: 10%;
+        font-size: 1.15rem;
+    }
 }
