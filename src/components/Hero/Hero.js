@@ -46,7 +46,7 @@ export default function Hero(){
                     </p>
                 </article>
             </div>
-            <section className='hero__image ${showSummary ? "fade-in" : ""'>
+            <section className='hero__image ${showSummary ? "fade-in" : ""}'>
                 <img
                     className='hero__image-src'
                     src={wheel}
