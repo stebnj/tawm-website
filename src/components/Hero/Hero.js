@@ -2,22 +2,28 @@ import React from 'react'
 import './Hero.scss'
 import wheel from '../../assets/pictures/wheel.svg'
 import college from '../../assets/pictures/college.svg'
-import {useEffect, useState } from "react"
+import {useEffect, useState  } from "react"
+import { useLocation } from 'react-router-dom'
 
 
 export default function Hero(){
-
+    const location = useLocation()
     const [showSummary, setShowSummary] = useState(false);
     const [showLogos, setShowLogos] = useState(false)
+    const [isInitialLoad, setIsInitialLoad] = useState(true)
 
     useEffect(() => {
+      if(isInitialLoad){
         setShowSummary(true);
-
         const timer = setTimeout(() => {
             setShowLogos(true);
         }, 1800)
-
+        setIsInitialLoad(false);
         return () => clearTimeout(timer)
+      } else {
+        setShowSummary(true);
+        setShowLogos(true)
+      }
     }, [])
     
 
@@ -40,7 +46,7 @@ export default function Hero(){
                     </p>
                 </article>
             </div>
-            <section className='hero__image'>
+            <section className='hero__image ${showSummary ? "fade-in" : ""'>
                 <img
                     className='hero__image-src'
                     src={wheel}
