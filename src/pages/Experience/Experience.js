@@ -2,6 +2,7 @@ import React from "react";
 import './Experience.scss'
 import egad from "../../assets/egad.svg"
 import holster from '../../assets/holster.svg'
+import tawm from '../../assets/tawmLogo.svg'
 
 
 
@@ -40,7 +41,19 @@ export default function Experience(){
             By implementing precise digital scans, we were able to create more accurate holsters with consistent fitment and fewer revisions, which streamlined our workflow and reduced production errors.
           </p>
          </section>
+         <section className="exp__tawm">
+            <img
+              src = {tawm}
+              className="exp__tawm-img"
+            />
+            <p className="exp__tawm-text">
+             At Harnell Designs, I worked as a Mechanical Designer supporting engineering teams by revising and updating 3D CAD models based on engineer-provided redlines and evolving design requirements. 
+             I assisted in preparing complete drawing packages for review, release, and fabrication, ensuring accuracy through drawing checklists, version control, and documentation standards. 
+             In addition to executing design changes, I contributed to improving internal workflows for redline tracking, model revisions, and design documentation, helping streamline collaboration and reduce errors across the design process. 
+            </p>
+        </section>
         </main>
+        
         
         
     )
