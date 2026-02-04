@@ -26,18 +26,15 @@
     font-size: 1.75rem;
     margin-top: 9rem;
 
-    &-resume{
-        padding-bottom: 2rem;
-    }
-    &-linkedin{
-        padding-bottom: 2rem;
+    &-list{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
-    &-email{
-        display: flex;
-        justify-content: center;
+
+    &-resume, &-linkedin{
+        padding-right: 2rem;
     }
+
 }
 
 
