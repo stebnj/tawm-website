@@ -4,15 +4,11 @@ import './Contact.scss'
 export default function Contact(){
     return(
         <main>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
-            <h1>Helloo</h1>
+            <section className='contact__title'>
+                <h1 className='contact__title-text'>
+                    Contact Me
+                </h1>
+            </section>
             
         </main>
     )

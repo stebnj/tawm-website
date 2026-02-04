@@ -5,11 +5,11 @@
 
 .hero{
     color: $White;
-    margin: 3rem 4rem 0 4rem;
+    margin: 6rem 4rem 0 4rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    height: 47rem;
+    
 
 
     &__inner-container{
@@ -32,6 +32,7 @@
     &__paragraph-text{
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         line-height: 2;
+        font-size: 1.15rem;
     }
 
     &__image-src{

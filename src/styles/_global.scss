@@ -12,8 +12,14 @@ body{
      @include font-styling(400, $Black);
     background-image: url(../assets/pictures/test.jpg);
     background-size: cover;
-    
+    background-attachment: fixed; 
     background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 
