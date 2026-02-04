@@ -3,11 +3,24 @@ import './Contact.scss'
 
 export default function Contact(){
     return(
-        <main>
+        <main className='contact'>
             <section className='contact__title'>
                 <h1 className='contact__title-text'>
                     Contact Me
                 </h1>
+            </section>
+            <section className='contact__content'>
+                <ul className='contact__content-list'>
+                    <li className='contact__content-resume'>
+                        View My Resume
+                    </li>
+                    <li className='contact__content-linkedin'>
+                        LinkedIn
+                    </li>
+                    <li className='contact__content-email'>
+                        My Email
+                    </li>
+                </ul>
             </section>
             
         </main>
