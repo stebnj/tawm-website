@@ -2,63 +2,85 @@ import React from 'react'
 import './Hero.scss'
 import wheel from '../../assets/pictures/wheel.svg'
 import college from '../../assets/pictures/college.svg'
-import {useEffect, useState  } from "react"
-import { useLocation } from 'react-router-dom'
+import {useRef } from "react"
+import {motion, useInView} from "framer-motion"
+
 
 
 export default function Hero(){
-    const location = useLocation()
-    const [showSummary, setShowSummary] = useState(false);
-    const [showLogos, setShowLogos] = useState(false)
-    const [isInitialLoad, setIsInitialLoad] = useState(true)
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: false, amount: 0.3 });
 
-    useEffect(() => {
-      if(isInitialLoad){
-        setShowSummary(true);
-        const timer = setTimeout(() => {
-            setShowLogos(true);
-        }, 1800)
-        setIsInitialLoad(false);
-        return () => clearTimeout(timer)
-      } else {
-        setShowSummary(true);
-        setShowLogos(true)
-      }
-    }, [])
-    
+    const containerVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { 
+                duration: 1.5,
+                staggerChildren: 0.3 
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            transition: { duration: 0.8 }
+        }
+    };
 
     return(
-
-        <main className='hero'>
-            <div className={`hero__inner-container ${showSummary ? "fade-in" : ""}`}>
-                <article className='hero__heading'>
+        <main className='hero' ref={ref}>
+            <motion.div 
+                className='hero__inner-container'
+                variants={containerVariants}
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+            >
+                <motion.article className='hero__heading' variants={itemVariants}>
                     <h1 className='hero__heading-text'>
                         Summary
                     </h1>
-                </article>
-                <article className='hero__paragraph'>
+                </motion.article>
+                <motion.article className='hero__paragraph' variants={itemVariants}>
                     <p className='hero__paragraph-text'>
                         Detail oriented and creative Mechanical Designer with 6 years of experience in 3D modeling and mechanical design, primarily using SolidWorks and AutoCAD.
                         Known for delivering high quality, manufacturable designs with a strong focus on accuracy and efficiency. 
                         Born and raised in Southern California, I bring a strong work ethic and a collaborative mindset to every project. 
                         I excel in creating detailed 3D models and assemblies that meet both functional and aesthetic requirements. 
                         Always eager to learn and adapt, I'm committed to continuous growth, whether that's mastering new CAD tools or exploring innovative design approaches to improve product performance and development cycles.
-                    </p>
-                </article>
-            </div>
-            <section className='hero__image ${showSummary ? "fade-in" : ""}'>
+                    </p>    
+                </motion.article>
+            </motion.div>
+
+            <motion.section 
+                className='hero__image'
+                variants={itemVariants}
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+            >
                 <img
                     className='hero__image-src'
                     src={wheel}
+                    alt="wheel"
                 />
-            </section>
+            </motion.section>
 
-            <section className={`hero__logos ${showLogos ? "fade-in" : ""}`}>
+            <motion.section 
+                className='hero__logos'
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+            >
                 <img 
-                className='hero__logos-college'
-                src={college}
+                    className='hero__logos-college'
+                    src={college}
+                    alt="college logo"
                 />
-            </section>
+            </motion.section>
         </main>
     )
 }
