@@ -42,8 +42,22 @@
 
 }
 
+.contact__message{
+    display: flex;
+    justify-content: center;
+}
 
 
+.contact__message-text{
+    font-size: 2rem;
+    padding: 5.5rem 3.5rem 4rem 3.5rem;
+    line-height: 3rem;
+    
+}
+
+.contact__email-intro{
+    padding-right: 0.5rem;
+}
 
 
 

@@ -43,7 +43,11 @@ export default function Contact(){
                         src={email}
                         className='contact__email-img'
                         />
-                        My Email: thomasduran17@yahoo.com
+                        <p className='contact__email-intro'>My Email:</p>
+                        <a href='mailto:thomasduran17@yahoo.com' className='contact__email-link'>
+                            thomasduran17@yahoo.com    
+                        </a>
+                        
                     </li>
                 </ul>
             </footer>

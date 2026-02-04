@@ -29,10 +29,12 @@ export default function Header(){
                                     Experience
                                 </li>
                             </Link>
-                         
-                            <li className='nav-bar__contact'>
-                                Contact Me
-                            </li >
+                            <Link to='/contact'>     
+                                <li className='nav-bar__contact'>
+                                    Contact Me
+                                </li >
+                            </Link>
+                       
                         </ul>
                     </section>
                 </section>
