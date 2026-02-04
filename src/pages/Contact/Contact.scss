@@ -35,6 +35,35 @@
         padding-right: 2rem;
     }
 
+    &-email{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+.contact__email-img, .contact__linkedin-img, .contact__resume-img{
+    height: 2rem;
+    padding-right: 0.5rem;
+}
+
+.contact__content-resume{
+    display: flex;
+    align-items: center;
+}
+
+.contact__linkedin-img{
+    height: 2rem;
+}
+
+.contact__content-linkedin{
+    display: flex;
+    align-items: center;
 }
 
 

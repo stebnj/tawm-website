@@ -1,6 +1,7 @@
 import './Contact.scss'
-import resume from '../../assets/resume.pdf'
-
+import email from '../../assets/pictures/email.svg'
+import linkedin from '../../assets/pictures/linkedin.svg'
+import resume from "../../assets/pictures/resume.svg"
 
 export default function Contact(){
     return(
@@ -20,19 +21,29 @@ export default function Contact(){
             <footer className='contact__content'>
                 <ul className='contact__content-list'>
                     <li className='contact__content-resume'>
+                        <img
+                            src={resume} 
+                            className='contact__resume-img'                       
+                        />
                         <a href='/resume.pdf' target="_blank" rel="noopener noreferrer">
                             View My Resume
                         </a>
-                        
                     </li>
                     <li className='contact__content-linkedin'>
+                        <img
+                            src={linkedin}
+                            className='contact__linkedin-img'
+                        />
                         <a href='https://www.linkedin.com/in/thomas-duran-iii-152400193/'>
                             LinkedIn 
                         </a>
-                        
                     </li>
                     <li className='contact__content-email'>
-                        My Email
+                        <img
+                        src={email}
+                        className='contact__email-img'
+                        />
+                        My Email: thomasduran17@yahoo.com
                     </li>
                 </ul>
             </footer>
