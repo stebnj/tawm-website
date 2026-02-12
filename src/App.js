@@ -20,46 +20,42 @@ function App() {
     },[])
 
     return (
-    <div 
-      ref={containerRef}
-      style={{
-        height: '100vh',
-        overflowY: 'scroll',
-        scrollSnapType: 'y mandatory',
-      }}
-    >
-      <section style={{ 
-        height: '100vh', 
-        scrollSnapAlign: 'start',
-        scrollSnapStop: 'always' 
-      }}>
-        <Hero />
-      </section>
-      
-      <section style={{ 
-        height: '100vh', 
-        scrollSnapAlign: 'start',
-        scrollSnapStop: 'always' 
-      }}>
-        <Experience />
-      </section>
-      
-      <section style={{ 
-        height: '100vh', 
-        scrollSnapAlign: 'start',
-        scrollSnapStop: 'always' 
-      }}>
-        <Contact />
-      </section>
-    </div>
-  );
+    <Routes>
+      <Route path="*" element={
+        <div 
+          ref={containerRef}
+          style={{
+            height: '100vh',
+            overflowY: 'scroll',
+            scrollSnapType: 'y mandatory',
+          }}
+        >
+          <section id="summary" style={{ height: '100vh', scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
+            <Hero />
+          </section>
+          
+          <section id="experience" style={{ height: '100vh', scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
+            <Experience />
+          </section>
+          
+          <section id="contact" style={{ height: '100vh', scrollSnapAlign: 'start', scrollSnapStop: 'always' }}>
+            <Contact />
+          </section>
+        </div>
+      } />
+    </Routes>
+    )
 }
 
 export default function AppWrapper(){
   return(
     <BrowserRouter>
-      <Header />
-      <App />
+    
+    <Header />
+    <App />
+    
+    
     </BrowserRouter>
+
   )
 }
