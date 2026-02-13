@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tawm-website/static/css/main.69f5ccba.css",
-    "main.js": "/tawm-website/static/js/main.fb98214a.js",
+    "main.js": "/tawm-website/static/js/main.5d8737a4.js",
     "static/media/test.jpg": "/tawm-website/static/media/test.b27856e58ee650c233c1.jpg",
     "static/media/tawmLogo.svg": "/tawm-website/static/media/tawmLogo.f057e71e207ac143e6a60e44b858556c.svg",
     "static/media/holster.svg": "/tawm-website/static/media/holster.890ce421231e33ff621dcb501758e869.svg",
@@ -11,15 +11,15 @@
     "static/media/wheel.svg": "/tawm-website/static/media/wheel.35a3dd2daa44d2481213c8ca25861e8f.svg",
     "static/media/college.svg": "/tawm-website/static/media/college.544263c2344db3c278dda28d9113dafc.svg",
     "static/media/linkedin.svg": "/tawm-website/static/media/linkedin.44906b3d6741f28a922941668a2ed244.svg",
-    "static/media/logosvg.svg": "/tawm-website/static/media/logosvg.33aa23dc65dae200c2d886313c4a8b08.svg",
+    "static/media/logosvg.svg": "/tawm-website/static/media/logosvg.012a819874c16e64c3b891b6c56dd81c.svg",
     "static/media/resume.svg": "/tawm-website/static/media/resume.a87fcef70b3fffb7ada1d1fc8d8df8da.svg",
     "static/media/email.svg": "/tawm-website/static/media/email.d4594538fa464f38ff6c4f4661431ef2.svg",
     "index.html": "/tawm-website/index.html",
     "main.69f5ccba.css.map": "/tawm-website/static/css/main.69f5ccba.css.map",
-    "main.fb98214a.js.map": "/tawm-website/static/js/main.fb98214a.js.map"
+    "main.5d8737a4.js.map": "/tawm-website/static/js/main.5d8737a4.js.map"
   },
   "entrypoints": [
     "static/css/main.69f5ccba.css",
-    "static/js/main.fb98214a.js"
+    "static/js/main.5d8737a4.js"
   ]
 }
