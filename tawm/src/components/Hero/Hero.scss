@@ -1,0 +1,65 @@
+@use '../../styles/global';
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.hero{
+    color: $White;
+    margin: 6rem 4rem 0 4rem;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+
+    &__inner-container{
+        flex: 1 1 50%;
+    }
+
+
+    &__heading{
+        margin-bottom: 0.75rem;
+    }
+
+    &__paragraph{
+        display:flex;
+        justify-content: center;
+        text-align: justify;
+        padding-right: 10%;
+        
+    }
+
+    &__paragraph-text{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        line-height: 2;
+        font-size: 1.15rem;
+    }
+
+    &__image-src{
+        width: 23rem;
+        height: auto;
+    }
+
+    &__logos{
+        flex: 1 1 100%;
+    }
+
+    &__logos-college{
+        width: 15rem;
+        
+        height: auto;
+    }
+}
+
+
+.hero__inner-container,
+.hero__logos{
+    opacity: 0;
+    transition: opacity 1.5s ease-in;
+}
+
+.fade-in{
+    opacity: 1;
+}
+

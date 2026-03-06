@@ -1,0 +1,34 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 1200 1200" role="img" aria-label="TDIII logo with compact shield">
+  <!-- Background (transparent) -->
+  <rect width="100%" height="100%" fill="none"></rect>
+
+  <!-- Compact Shield -->
+  <g id="shield" transform="translate(600,600)">
+    <path d="M -400 -260 
+             C -250 -220, -150 -220, 0 -240
+             C 150 -220, 250 -220, 400 -260
+             L 400 0
+             C 400 160, 270 300, 0 380
+             C -270 300, -400 160, -400 0 Z" fill="none" stroke="#0b0b0b" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"></path>
+    <path d="M -360 -240 
+             C -230 -200, -140 -200, 0 -220
+             C 140 -200, 230 -200, 360 -240
+             L 360 0
+             C 360 140, 240 260, 0 340
+             C -240 260, -360 140, -360 0 Z" fill="none" stroke="#0b0b0b" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"></path>
+  </g>
+
+  <!-- Monogram centered -->
+  <g id="monogram" transform="translate(600,600)" text-anchor="middle" fill="#0b0b0b">
+    <!-- Large TD -->
+    <text x="0" y="40" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="280" letter-spacing="6" dominant-baseline="middle">
+      TD
+    </text>
+
+    <!-- Roman numerals below -->
+    <text x="0" y="230" font-family="Georgia, 'Times New Roman', serif" font-weight="500" font-size="100" letter-spacing="8">
+      III
+    </text>
+  </g>
+</svg>
